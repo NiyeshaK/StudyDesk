@@ -1,0 +1,74 @@
+{% extends 'dash/base.html' %}
+{% load static %}
+{% block title %}Form{% endblock title %}
+{% block content %}
+
+    
+
+     
+     
+     <div class="container-fluid pt-4 px-4">
+        <div class="row g-4">
+            <div class="col-sm-12 col-xl-6">
+                <div class="bg-light rounded h-100 p-4">
+                    <h6 class="mb-4">PDF Table</h6>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Subject</th>
+                                <th scope="col">PDF Title</th>
+                                
+                                <th scope="col">Delete</th>
+                                <th scope="col">View</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for d1 in data1  %}
+                            <tr>
+                                <th scope="row">{{forloop.counter}}</th>
+                                <td>{{d1.subject}}</td>
+                                <td>{{d1.title}}</td>
+                
+                                <td><a href="{% url 'delete-n' d1.id %}"><i class="fas fa-trash-alt "></i></a></td>
+                                <td><a href="{% url 'view1' d1.id %}"><i class="fas fa-eye "></i></a></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-12 col-xl-6">
+                <div class="bg-light rounded h-100 p-4">
+                    <h6 class="mb-4">Video Table</h6>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Subject</th>
+                                <th scope="col">Video Title</th>
+                                <th scope="col">Delete</th>
+                                <th scope="col">View</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for d2 in data2  %}
+                            <tr>
+                                <th scope="row">{{forloop.counter}}</th>
+                                <td>{{d2.subject}}</td>
+                                <td>{{d2.title}}</td>
+                                <td><a href="{% url 'delete-v' d2.id %}"><i class="fas fa-trash-alt "></i></a></td>
+                                <td><a href="{% url 'view2' d2.id %}"><i class="fas fa-eye "></i></a></td>
+                            </tr>
+                            
+                           {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+     
+
+{% endblock content%}

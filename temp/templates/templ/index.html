@@ -1,0 +1,552 @@
+{% extends 'dashboard/home.html' %}
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Courses | Education</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="site.webmanifest">
+<link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico'  %}">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'assets/css/A.bootstrap.min.css+owl.carousel.min.css+slicknav.css+flaticon.css+progressbar_barfiller.css+gijgo.css+animate.min.css+animated-headline.css+magnific-popup.css+fontawesome-all.min.css+themify-icons.css+slick.css+nice-select.css,Mcc.Pxzw7oAlNi.css.pagespeed.cf.bjkLWKfzv7.css' %}" />
+<link rel="stylesheet" href="{% static 'assets/css/A.style.css.pagespeed.cf.1UipfJoacK.css' %}">
+<script>(function(w,d){!function(a,e,t,r,z){a.zarazData=a.zarazData||{},a.zarazData.executed=[],a.zarazData.tracks=[],a.zaraz={deferred:[]};var s=e.getElementsByTagName("title")[0];s&&(a.zarazData.t=e.getElementsByTagName("title")[0].text),a.zarazData.w=a.screen.width,a.zarazData.h=a.screen.height,a.zarazData.j=a.innerHeight,a.zarazData.e=a.innerWidth,a.zarazData.l=a.location.href,a.zarazData.r=e.referrer,a.zarazData.k=a.screen.colorDepth,a.zarazData.n=e.characterSet,a.zarazData.o=(new Date).getTimezoneOffset(),a.dataLayer=a.dataLayer||[],a.zaraz.track=(e,t)=>{for(key in a.zarazData.tracks.push(e),t)a.zarazData["z_"+key]=t[key]},a.zaraz._preSet=[],a.zaraz.set=(e,t,r)=>{a.zarazData["z_"+e]=t,a.zaraz._preSet.push([e,t,r])},a.dataLayer.push({"zaraz.start":(new Date).getTime()}),a.addEventListener("DOMContentLoaded",(()=>{var t=e.getElementsByTagName(r)[0],z=e.createElement(r);z.defer=!0,z.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a.zarazData))),t.parentNode.insertBefore(z,t)}))}(w,d,0,"script");})(window,document);</script></head>
+<body>
+
+
+
+
+<header>
+
+<div class="header-area header-transparent">
+<div class="main-header ">
+<div class="header-bottom  header-sticky">
+<div class="container-fluid">
+<div class="row align-items-center">
+
+<div class="col-xl-2 col-lg-2">
+<div class="logo">
+<a href="templ/index.html"><img src="data:image/webp;base64,UklGRrACAABXRUJQVlA4TKMCAAAvlUAHEG9iIG2b+De97Tcx//OvsG3bNlbZWV17gJUFIBgDkEgkhA/wAAQQAAAUjAcDGKARAAOQAAegMGgAQzAKPGwYQD8EQAMIAhBAAhgJAIyEEADStW1v2+Rj7y1WlwBB9t5RyajAVKh9z/98yKdPMr6c3xH9Z+C2kaIccxaup/vC6ytcTZvfXlHGcOfZWXv962b+jOo4OERD/5Os8+C09ycSGlEdB0jD1Xksc/+rl3S2dQewz5nLiytZZpenezJxAPymUwtw/ZqIPt6iNGohWPlGHcA10aMblEYVotaiFuA5vUF55Akn9eA1vUua7NOqE942mkgv4OhYoAKAoKNnNo4GnYOMEQp3NLAAbIZ/xwFw5QJKTRwTLICwMVETWw8UQyISlSrCAWjkp0FxQrwwTnyAAaC1Zw42EmT1tohtFclK1RDYdn5EFSqXhmcOWo6MhWRLslI1IIcJi3HTCQAmuXjmwAytMXYS6YSOaRxsO6JStRvpZtNRNftcgKEiomFUX3FPMZGWE5UqYpM+hVXCRsj1bDr8tQoAignLM896jLYHFchKFd5IyyZGqF3Hqj2PInJk/QTYKGZVLPzBwi+MEpUqTO/iJLLQpWZaZCJodzZgHqy/sT06Q6m6L12YaKKTjguqzG6bhSGiE+bDuqBnPSVDqRLIyVoTVuyMy9AxE+Sg4f75cZ8Ov8wshgml6lDyeFiokMrJEDtlIATqRJQIKq1UDUQTqfgLRUTaJ74OHS5hXQaNEPvJoW/TSlVBarhheTxUsUfi+9soANegTc7uk4UHitiiswlMPq2Uw1tmUve/mNl/mHWpjsOTwWWp2e3v1fgx1XZ4/uHHZZq/y+/vnt6l2g9PLpyIfU/HY/jso3+rny/pqAwPWgOih+Mv96juAwEA" alt=""></a>
+</div>
+</div>
+<div class="col-xl-10 col-lg-10">
+<div class="menu-wrapper d-flex align-items-center justify-content-end">
+
+<div class="main-menu d-none d-lg-block">
+<nav>
+<ul id="navigation">
+<li class="active"><a href="templ/index.html">Home</a></li>
+<li><a href="#Our Services">Services</a></li>
+<li><a href="#Subjects">Subjects</a></li>
+
+
+<li><a href="#footer">Contact</a></li>
+
+<li class="button-header margin-left "><a href="signup.html" class="btn">Sign Up</a></li>
+<li class="button-header"><a href="signin.html" class="btn btn3">Log in</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+
+<div class="col-12">
+<div class="mobile_menu d-block d-lg-none"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</header>
+<main>
+
+<section class="slider-area ">
+<div class="slider-active">
+
+<div class="single-slider slider-height d-flex align-items-center">
+<div class="container">
+<div class="row">
+<div class="col-xl-6 col-lg-7 col-md-12">
+<div class="hero__caption">
+<h1 data-animation="fadeInLeft" data-delay="0.2s">Learn better with-<br> Study Desk</h1>
+<p data-animation="fadeInLeft" data-delay="0.4s">Build skills with courses, certificates, and degrees online from world-class universities and companies</p>
+<a href="signup.html" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Join for Free</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="services-area">
+<div class="container">
+<div class="row justify-content-sm-center">
+<div class="col-lg-4 col-md-6 col-sm-8">
+<div class="single-services mb-30">
+<div class="features-icon">
+<img src="{% static 'assets/img/icon/icon1.svg' %}" alt="">
+</div>
+<div class="features-caption">
+<h3>20+ courses</h3>
+<p>Find a wide range of learning courses.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-8">
+<div class="single-services mb-30">
+<div class="features-icon">
+<img src="{% static 'assets/img/icon/icon2.svg' %}" alt="">
+</div>
+<div class="features-caption">
+<h3>Expert instructors</h3>
+<p>Certified courses from expert instructors.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-8">
+<div class="single-services mb-30">
+<div class="features-icon">
+<img src="{% static 'assets/img/icon/icon3.svg' %}" alt="">
+</div>
+<div class="features-caption">
+<h3>Anytime access</h3>
+<p>Access anytime once you register.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--services we provide-->
+<div class="courses-area section-padding40 fix">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-xl-7 col-lg-8">
+<div class="section-tittle text-center mb-55">
+<div id="Our Services">
+
+<h2>Services we provide</h2>
+
+
+
+
+</div>
+</div>
+</div>
+
+   <!-- service/register page -->
+
+</div>
+</div>
+</div>
+
+
+
+<div class="topic-area section-padding40">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-xl-7 col-lg-8">
+<div class="section-tittle text-center mb-55">
+  <div id="Subjects">
+<h2>Explore top subjects</h2>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="single-topic text-center mb-30">
+<div class="topic-img">
+<img src="{% static 'assets/img/gallery/xtopic1.png.pagespeed.ic.W8owv99y3Q.webp' %}" alt="">
+<div class="topic-content-box">
+<div class="topic-content">
+<h3><a href="pyhton.html">Python Programming</a></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="single-topic text-center mb-30">
+<div class="topic-img">
+<img src="{% static 'assets/img/gallery/xtopic2.png.pagespeed.ic.B3AdJWv-1b.webp' %}" alt="">
+<div class="topic-content-box">
+<div class="topic-content">
+<h3><a href="#">Web Development</a></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="single-topic text-center mb-30">
+<div class="topic-img">
+<img src="{% static 'assets/img/gallery/xtopic3.png.pagespeed.ic.n8ulHI4rIb.webp' %}" alt="">
+<div class="topic-content-box">
+<div class="topic-content">
+<h3><a href="#">Data Structures</a></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="single-topic text-center mb-30">
+<div class="topic-img">
+<img src="{% static 'assets/img/gallery/xtopic4.png.pagespeed.ic.vf7TnG-Tx3.webp' %}" alt="">
+<div class="topic-content-box">
+<div class="topic-content">
+<h3><a href="#">Java Programming</a></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="single-topic text-center mb-30">
+<div class="topic-img">
+<img src="{% static 'assets/img/gallery/xtopic5.png.pagespeed.ic.xN5MukZNne.webp' %}" alt="">
+<div class="topic-content-box">
+<div class="topic-content">
+<h3><a href="#">Database Management Systems</a></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="single-topic text-center mb-30">
+<div class="topic-img">
+<img src="{% static 'assets/img/gallery/xtopic6.png.pagespeed.ic.IbevEVkysD.webp' %}" alt="">
+<div class="topic-content-box">
+<div class="topic-content">
+<h3><a href="#">Design and Analysis of Algorithms</a></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="single-topic text-center mb-30">
+<div class="topic-img">
+<img src="{% static 'assets/img/gallery/xtopic7.png.pagespeed.ic.188nILA8sy.webp' %}" alt="">
+<div class="topic-content-box">
+<div class="topic-content">
+<h3><a href="#">Operating Systems</a></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6">
+<div class="single-topic text-center mb-30">
+<div class="topic-img">
+<img src="{% static 'assets/img/gallery/xtopic8.png.pagespeed.ic.WYCJEzHwlX.webp' %}" alt="">
+<div class="topic-content-box">
+<div class="topic-content">
+<h3><a href="#">C/C++ Programming</a></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-xl-12">
+<div class="section-tittle text-center mt-20">
+<a href="courses.html" class="border-btn" target="_blank">View More Subjects</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<section class="about-area3 fix">
+<div class="support-wrapper align-items-center">
+<div class="right-content3">
+
+<div class="right-img">
+<img src="{% static 'assets/img/gallery/xabout3.png.pagespeed.ic.nc8f2vikQH.webp' %}" alt="">
+</div>
+</div>
+<div class="left-content3">
+
+<div class="section-tittle section-tittle2 mb-20">
+<div class="front-text">
+<h2 class="">Learner outcomes on courses you will take</h2>
+</div>
+</div>
+<div class="single-features">
+<div class="features-icon">
+<img src="{% static 'assets/img/icon/right-icon.svg' %}" alt="">
+</div>
+<div class="features-caption">
+<p>Techniques to engage effectively with vulnerable children and young people.</p>
+</div>
+</div>
+<div class="single-features">
+<div class="features-icon">
+<img src="{% static 'assets/img/icon/right-icon.svg' %}" alt="">
+</div>
+<div class="features-caption">
+<p>Join millions of people from around the world
+learning together.</p>
+</div>
+</div>
+<div class="single-features">
+<div class="features-icon">
+<img src="{% static 'assets/img/icon/right-icon.svg' %}" alt="">
+</div>
+<div class="features-caption">
+<p>Join millions of people from around the world learning together.
+Online learning is as easy and natural.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!--
+<section class="team-area section-padding40 fix">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-xl-7 col-lg-8">
+<div class="section-tittle text-center mb-55">
+<h2>Community experts</h2>
+</div>
+</div>
+</div>
+<div class="team-active">
+<div class="single-cat text-center">
+<div class="cat-icon">
+<img src="assets/img/gallery/xteam1.png.pagespeed.ic.J3CG9reTvh.webp" alt="">
+</div>
+<div class="cat-cap">
+<h5><a href="services.html">Mr. Urela</a></h5>
+<p>The automated process all your website tasks.</p>
+</div>
+</div>
+<div class="single-cat text-center">
+<div class="cat-icon">
+<img src="assets/img/gallery/xteam2.png.pagespeed.ic.JeCc9cCrWh.webp" alt="">
+</div>
+<div class="cat-cap">
+<h5><a href="services.html">Mr. Uttom</a></h5>
+<p>The automated process all your website tasks.</p>
+</div>
+</div>
+<div class="single-cat text-center">
+<div class="cat-icon">
+<img src="assets/img/gallery/xteam3.png.pagespeed.ic.3liGjBrsrd.webp" alt="">
+</div>
+<div class="cat-cap">
+<h5><a href="services.html">Mr. Shakil</a></h5>
+<p>The automated process all your website tasks.</p>
+</div>
+</div>
+<div class="single-cat text-center">
+<div class="cat-icon">
+<img src="assets/img/gallery/xteam4.png.pagespeed.ic.DwISzZCT12.webp" alt="">
+</div>
+<div class="cat-cap">
+<h5><a href="services.html">Mr. Arafat</a></h5>
+<p>The automated process all your website tasks.</p>
+</div>
+</div>
+<div class="single-cat text-center">
+<div class="cat-icon">
+<img src="assets/img/gallery/xteam3.png.pagespeed.ic.3liGjBrsrd.webp" alt="">
+</div>
+<div class="cat-cap">
+<h5><a href="services.html">Mr. saiful</a></h5>
+<p>The automated process all your website tasks.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+-->
+
+<section class="about-area2 fix pb-padding">
+<div class="support-wrapper align-items-center">
+<div class="right-content2">
+
+<div class="right-img">
+<img src="{% static 'assets/img/gallery/xabout2.png.pagespeed.ic.N3ytPGt7yu.webp' %}" alt="">
+</div>
+</div>
+<div class="left-content2">
+
+<div class="section-tittle section-tittle2 mb-20">
+<div class="front-text">
+<h2 class="">Take the next step
+toward your study goals
+with us.</h2>
+<p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.</p>
+<a href="signup.html" class="btn">Join now for Free</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<footer>
+<div class="footer-wrappper footer-bg">
+
+<div class="footer-area footer-padding">
+<div class="container">
+<div class="row justify-content-between">
+<div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
+<div class="single-footer-caption mb-50">
+<div class="single-footer-caption mb-30">
+
+<div class="footer-logo mb-25">
+<a href="index.html"><img src="{% static 'assets/img/logo/xlogo2_footer.png.pagespeed.ic.9_hzME_LmW.webp' %}" alt=""></a>
+</div>
+<div class="footer-tittle">
+<div class="footer-pera">
+<p>Accentuating CS students' academics in every way we can, providing services right at their study desks.</p>
+</div>
+</div>
+
+
+<!--
+<div class="footer-social">
+<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+<a href="https://in.pinterest.com/"><i class="fa fa-pinterest"></i></a>
+</div>
+-->
+
+</div>
+</div>
+</div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+<div class="single-footer-caption mb-50">
+<div class="footer-tittle">
+<h4>Our solutions</h4>
+<ul>
+<li><a href="#">Self-assessment tests</a></li>
+<li><a href="#">Programming Courses</a></li>
+<li><a href="#">Wikipedia Search</a></li>
+<li><a href="#">Youtube Search</a></li>
+<li><a href="#">Notes</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+<div class="single-footer-caption mb-50">
+<div class="footer-tittle">
+<h4>Courses we offer</h4>
+<ul>
+<li><a href="#">Python</a></li>
+<li><a href="#">HTML</a></li>
+<li><a href="#">CSS</a></li>
+<li><a href="#">C/C++</a></li>
+<li><a href="#">Java</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+<div class="single-footer-caption mb-50">
+<div class="footer-tittle">
+<h4>Subjects available</h4>
+<ul>
+<li><a href="#">DBMS</a></li>
+<li><a href="#">Data Structures</a></li>
+<li><a href="#">Operating Systems</a></li>
+<li><a href="#">Compiler Design</a></li>
+<li><a href="#">Theory of Computation</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-bottom-area">
+<div class="container">
+<div class="footer-border">
+<div class="row d-flex align-items-center">
+<div class="col-xl-12 ">
+<div class="footer-copy-right text-center">
+<p>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://svitvasad.ac.in/" target="_blank">students of SVIT.</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</footer>
+
+<!--
+<div id="back-top">
+<a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+-->
+
+
+<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+
+<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="assets/js/popper.min.js+bootstrap.min.js+jquery.slicknav.min.js.pagespeed.jc.FAxn3fLQIG.js"></script><script>eval(mod_pagespeed_rUezBy$u6W);</script>
+<script>eval(mod_pagespeed_I$bx5Sk0lL);</script>
+
+<script>eval(mod_pagespeed_0WmRPuy2R2);</script>
+
+<script src="assets/js/owl.carousel.min.js+slick.min.js.pagespeed.jc.MvdZXrxw3E.js"></script><script>eval(mod_pagespeed_N24ecNEuU4);</script>
+<script>eval(mod_pagespeed_SSVDKaH1cu);</script>
+
+<script src="assets/js/wow.min.js+animated.headline.js+jquery.magnific-popup.js.pagespeed.jc.Hw7kEqgrH-.js"></script><script>eval(mod_pagespeed_EbP84Shu0y);</script>
+<script>eval(mod_pagespeed_3V$oTPOrik);</script>
+<script>eval(mod_pagespeed_KdGKEH78VK);</script>
+
+<script src="./assets/js/gijgo.min.js"></script>
+
+<script src="assets/js/jquery.nice-select.min.js+jquery.sticky.js+jquery.barfiller.js+jquery.counterup.min.js+waypoints.min.js+jquery.countdown.min.js+hover-direction-snake.min.js+contact.js+jquery.form.js.pagespeed.jc.SFwrLDF31U.js"></script><script>eval(mod_pagespeed_6gUGEOJ31E);</script>
+<script>eval(mod_pagespeed_RjnHLEP38B);</script>
+
+<script>eval(mod_pagespeed_Xfnp9KsDEX);</script>
+
+<script>eval(mod_pagespeed_4F$jy$gyWq);</script>
+<script>eval(mod_pagespeed_2A$OQkzSwQ);</script>
+<script>eval(mod_pagespeed__sJXrHhi9n);</script>
+<script>eval(mod_pagespeed_kaot9bSf9j);</script>
+
+<script>eval(mod_pagespeed_tQToAB2vCI);</script>
+<script>eval(mod_pagespeed_lAWOB2xCd3);</script>
+<script src="assets/js/jquery.validate.min.js+mail-script.js+jquery.ajaxchimp.min.js+plugins.js+main.js.pagespeed.jc.Lu-zDWFXUe.js"></script><script>eval(mod_pagespeed_mZYG$KiyaO);</script>
+<script>eval(mod_pagespeed_LG9vi77dZ5);</script>
+<script>eval(mod_pagespeed_RReNCWy2Pv);</script>
+
+<script>eval(mod_pagespeed_QLgeFFTVuE);</script>
+<script>eval(mod_pagespeed_tS7A$rzoi_);</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6dd7d480fbde1d91","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

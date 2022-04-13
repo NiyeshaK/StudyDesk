@@ -1,0 +1,140 @@
+{% extends 'dash/base.html' %}
+{% load static %}
+{% block title %}Form{% endblock title %}
+
+
+{% block content %}
+
+
+<div class="container-fluid pt-4 px-4">
+    
+    
+    <div class="row g-4">
+        <div class="col-sm-12 col-xl-6">
+
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Notes Forms </h6>
+                <form method="POST" action="submit" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{form1.as_p}}
+                     {% comment %} <div class="mb-3">
+                        
+                        <label for="subject" name="subject">Choose a Subject:</label>
+                        <select name="subject" id="subject">
+                            <optgroup label="Core Subject">
+                                <option value="DS">DS</option>
+                                <option value="DBMS">DBMS</option>
+                                <option value="OS">OS</option>
+                                <option value="COA">COA</option>
+                                <option value="CN">CN</option>
+                                <option value="DF">DF</option>
+                                <option value="SE">SE</option>
+
+                            </optgroup>
+                            <optgroup label="Language Specific">
+                                <option value="C">C</option>
+                                <option value="JAVA">JAVA</option>
+                                <option value="C">PHP</option>
+                                <option value="JAVA">Python</option>
+                            </optgroup>
+                        </select> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="title" name="title">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea class="form-control" id="title" rows="2" name="description"></textarea>
+
+                    </div>
+                     <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-2 pt-0">Notes:</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="notes" id="hw"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="hw">
+                                    Handwritten Notes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="notes" id="pdf"
+                                    value="option2">
+                                <label class="form-check-label" for="pdf">
+                                    PDF
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset> 
+                    <div class="mb-3">
+                        <label for="files" name="file" >File: </label>
+                        <input type="file" class="form-control-file" id="files">
+                    </div>  {% endcomment %}
+                    <br>
+                    <button type="submit" class="btn btn-primary">Upload</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-12 col-xl-6">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Videos Form</h6>
+                <form method="POST" action="vid" enctype="multipart/form-data" >
+                    {% csrf_token %}
+                    {{form2.as_p}}
+                    {% comment %} <div class="row mb-3">
+                        <div class="mb-3">
+                            <label for="subject">Choose a Subject:</label>
+                            <select name="subject" id="subject">
+                                <optgroup label="Core Subject">
+                                    <option value="DS">DS</option>
+                                    <option value="DBMS">DBMS</option>
+                                    <option value="OS">OS</option>
+                                    <option value="COA">COA</option>
+                                    <option value="CN">CN</option>
+                                    <option value="DF">DF</option>
+                                    <option value="SE">SE</option>
+
+                                </optgroup>
+                                <optgroup label="Language Specific">
+                                    <option value="C">C</option>
+                                    <option value="JAVA">JAVA</option>
+                                    <option value="PHP">PHP</option>
+                                    <option value="PYTHON">PYTHON</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="title">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea class="form-control" id="title" rows="2"></textarea>
+ <br>
+                    </div>
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Caption</label>
+                        <input type="text" class="form-control" id="title">
+
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="files">File: </label>
+                        <input type="file" class="form-control-file" id="files">
+                    </div>
+<br> {% endcomment %}
+                    <button type="submit" class="btn btn-primary">Upload</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+{% endblock content %}

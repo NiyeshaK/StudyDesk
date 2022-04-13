@@ -1,0 +1,67 @@
+{% extends 'temp/base.html' %}
+{% comment %} {% load embed_video_tags %} {% endcomment %}
+{% load static %}
+{% comment %} {% load media %} {% endcomment %}
+{% block content %}
+<div class="container">
+    <h1 class="alert-light text-center">Notes Details</h1>
+    <div class="row">
+        <div class="col-sm-10">
+            <h3 class="text-center"><u>Details </u></h3>
+            
+            
+            <div>
+                
+            {% for d in d1 %}
+             {% comment %} {% if d.subject is sub %} {% endcomment %}
+            <p>Title: {{d.title}}</p>
+           <p> Subject :{{d.subject}}</p>
+           <p> Description :{{d.description}}</p>
+           <p>{{d.file}}</p>
+           <embed src="{{d.file.url}}" width="500px" height="500px" />
+           {% comment %} <p> <a href="{d.file.url}">Download File</a></p> {% endcomment %}
+           {% comment %} {% endif %} {% endcomment %}
+            {% endfor %}
+            
+            </div>
+            <br>
+
+            <div>
+                
+                {% for d in d2 %}
+                 {% comment %} {% if d.subject is sub %} {% endcomment %}
+                <p>Title: {{d.title}}</p>
+               <p> Subject :{{d.subject}}</p>
+               <p> Description :{{d.description}}</p>
+               <p>{{d.file}}</p>
+               <p>{{d.link1}}</p>
+               {% if d.file %}
+                <video controls width="400" >
+                <source src="{{d.file.url}}" type="video/mp4">
+                
+                Your browser does not support HTML video.
+              </video>
+              {% comment %} <video width="400" controls>
+                <source src="mov_bbb.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+                Your browser does not support HTML video.
+              </video> {% endcomment %}
+
+              <p>
+               
+               {% else %}
+                <a href="{{d.link1}}" target="_blank">Big Buck Bunny</a>.
+                </p>
+                {% endif %}
+                
+               {% comment %} <embed src="{{d.file.url}}" width="500px" height="500px" /> {% endcomment %}
+               {% comment %} <p> <a href="{d.file.url}">Download File</a></p> {% endcomment %}
+               {% comment %} {% endif %} {% endcomment %}
+                {% endfor %}
+                
+                </div>
+        
+        </div>
+    </div>
+</div>
+{% endblock content  %}

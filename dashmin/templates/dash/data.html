@@ -1,0 +1,28 @@
+{% extends 'dash/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <h1 class="alert-light text-center">Notes Details</h1>
+    <div class="row">
+        <div class="col-sm-10">
+            <h3 class="text-center"><u>Details </u></h3>
+            
+            {% if d1 %}
+           <p>  ID: {{d1.id}}</p>
+            <p>Title:{{d1.title}}</p>
+            <p>Description : {{d1.description}} </p>
+            <p>Notes: {{d1.note}}</p>
+            <p>File: {{d1.file}}</p>
+            <embed src="{{d1.file.url}}" width="800px" height="1000px" />
+            {% else %}
+            <p>  ID: {{d2.id}}</p>
+            <p>Title:{{d2.title}}</p>
+            <p>Description : {{d2.description}} </p>
+            <p>Video: {{d2.video}}</p>
+            <p>VideoLink: {{d2.Link1}}</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+    
+{% endblock content %}

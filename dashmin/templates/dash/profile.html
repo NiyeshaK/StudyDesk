@@ -1,0 +1,117 @@
+{% extends 'dash/base.html' %}
+{% load static %}
+{% block title %}index{% endblock title %}
+{% block content %}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+      <div class="container-fluid pt-4 px-4">
+        <div class="row g-4">
+          <div class="col-sm-12 col-xl-6">
+            <div class="bg-light rounded h-100 p-4">
+              
+              
+                <img src="{% static 'dashmin/img/userlogo.png' %}" width="150px" height="150px">
+                <p class="pr-text">
+                <h4>Name:{{user.username}}</h4>
+                <h4>Email:{{user.email}}</h4>
+                {% if data %}
+                {% for d1 in data %}
+                <h4>Designation:{{d1.designation}}</h4>
+                <h4>Subject Area:{{d1.subArea}}}</h4>
+                <h4>Profile:{{d1.Profile}}</h4>
+                {% endfor %}
+                {% endif %}
+                
+                </p>
+                
+                <button type="button"  data-toggle="modal" data-target="#myModal">
+                  <i class="fas fa-edit me-lg-2"></i>Edit Profile
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        
+                        <h4 class="modal-title">Edit Profile</h4>
+                      </div>
+                      <div class="modal-body">
+                        <form method="POST" action="edit">
+                          {% csrf_token %}
+                          {% comment %} {{edituser.as_p}} {% endcomment %}
+                          <div class="form-group row">
+                            
+                            <label for="staticName" class="col-sm-2 col-form-label">Name : </label>
+                            <div class="col-sm-10">
+                              <input type="text" readonly class="form-control-plaintext" id="staticName" value="{{user.username}}" name="u_name">
+                            </div>
+                          
+            
+                          </div>
+                          <div class="form-group row">
+                            <label for="staticEmail" class="col-sm-2 col-form-label">Email :</label>
+                            <div class="col-sm-10">
+                              <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="{{user.email}}" name="u_email">
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-group">
+                              <label for="designation">Designation</label>
+                              <select class="form-control" id="designation" name="desg">
+                  
+                                <option>Teacher</option>
+                                <option>Student</option>
+                              
+                              </select>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-group">
+                              <label for="designation">Subject Area</label>
+                              <select class="form-control" id="designation" name="area">
+                                <option>Language specific</option>
+                                <option>Core subject</option>
+                              
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="description">Profile </label>
+                            <textarea class="form-control" id="description" rows="2" name="profile"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <label for="files">Profile Picture: </label>
+                            <input type="file" class="form-control-file" id="files" name="pic">
+                        </div>
+                          
+                       
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-default" >Save</button>&nbsp;
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </form>
+
+                  </div>
+                </div>
+                </div>
+
+
+              
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    
+
+{% endblock content  %}
